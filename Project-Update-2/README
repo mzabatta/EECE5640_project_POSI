@@ -1,1 +1,24 @@
-test
+Project for High Performance Computing class
+
+Instructions:
+
+1. open an interactive node on the discovery cluster.
+2. compile the code with the command "g++ -fopenmp main_OMP.cpp -o proj2"
+3. run the code with the command "bsub < myproj2_XX.bash" (replacing XX with 10, 20, or 30 to # of specify nodes)
+
+File Descriptions:
+
+main_OMP.cpp - main C++ code with OpenMP parallelization implemented
+proj2 - executable 
+myproj2_10.bash - script for running on the discovery cluster with 10 nodes 
+myproj2_20.bash - script for running on the discovery cluster with 20 nodes 
+myproj2_30.bash - script for running on the discovery cluster with 30 nodes
+F.txt - input file of atom form factors 
+q.txt - input file of q angle values 
+X.txt - input file of atom coordinates 
+output_file_10 - output file from 10 node bash output
+output_file_10 - output file from 20 node bash output
+output_file_10 - output file from 30 node bash output
+error_file_10 - error file from 10 node bash output
+error_file_20 - error file from 20 node bash output
+error_file_30 - error file from 30 node bash output
