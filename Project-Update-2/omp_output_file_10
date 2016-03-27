@@ -1,0 +1,64 @@
+Sender: LSF System <lsfadmin@compute-0-056>
+Subject: Job 605039: <myproj_omp_10> in cluster <mghpcc_cluster1> Done
+
+Job <myproj_omp_10> was submitted from host <compute-0-006> by user <zabatta.ma> in cluster <mghpcc_cluster1>.
+Job was executed on host(s) <2*compute-0-056>, in queue <ser-par-10g>, as user <zabatta.ma> in cluster <mghpcc_cluster1>.
+</home/zabatta.ma> was used as the home directory.
+</home/zabatta.ma/Project/OMP> was used as the working directory.
+Started at Fri Mar 18 19:56:39 2016
+Results reported at Fri Mar 18 19:59:08 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+#BSUB -J myproj_omp_10
+#BSUB -o omp_output_file_10
+#BSUB -e omp_error_file_10
+#BSUB -n 2
+export OMP_NUM_THREADS=10
+./proj2
+./proj2
+./proj2
+./proj2
+./proj2
+./proj2
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               1424.61 sec.
+    Max Memory :             13 MB
+    Average Memory :         7.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               263 MB
+
+    Max Processes :          4
+    Max Threads :            14
+
+The output (if any) follows:
+
+Number of threads = 10
+Time taken to run code = 32.000000
+Number of threads = 10
+Time taken to run code = 11.000000
+Number of threads = 10
+Time taken to run code = 11.000000
+Number of threads = 10
+Time taken to run code = 12.000000
+Number of threads = 10
+Time taken to run code = 42.000000
+Number of threads = 10
+Time taken to run code = 39.000000
+
+
+PS:
+
+Read file <omp_error_file_10> for stderr output of this job.
+
