@@ -1,0 +1,52 @@
+Sender: LSF System <lsfadmin@compute-0-037>
+Subject: Job 615242: <mpi_proj_4> in cluster <mghpcc_cluster1> Done
+
+Job <mpi_proj_4> was submitted from host <discovery2> by user <zabatta.ma> in cluster <mghpcc_cluster1>.
+Job was executed on host(s) <4*compute-0-037>, in queue <ser-par-10g>, as user <zabatta.ma> in cluster <mghpcc_cluster1>.
+</home/zabatta.ma> was used as the home directory.
+</home/zabatta.ma/Project/MPI> was used as the working directory.
+Started at Tue Mar 29 18:41:08 2016
+Results reported at Tue Mar 29 18:41:50 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+#BSUB -J mpi_proj_4
+#BSUB -o mpi_proj_out_4
+#BSUB -e mpi_proj_err_4
+#BSUB -n 4
+#BSUB -R "span[ptile=4]"
+
+mpirun -np 4 mympi
+mpirun -np 4 mympi
+mpirun -np 4 mympi
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               165.91 sec.
+    Max Memory :             18 MB
+    Average Memory :         15.33 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               430 MB
+
+    Max Processes :          9
+    Max Threads :            10
+
+The output (if any) follows:
+
+Execution time = 14.559482 
+Execution time = 13.288973 
+Execution time = 12.670577 
+
+
+PS:
+
+Read file <mpi_proj_err_4> for stderr output of this job.
+

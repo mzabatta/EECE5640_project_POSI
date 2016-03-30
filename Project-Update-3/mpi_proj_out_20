@@ -1,0 +1,56 @@
+Sender: LSF System <lsfadmin@compute-0-040>
+Subject: Job 615180: <mpi_proj_20> in cluster <mghpcc_cluster1> Done
+
+Job <mpi_proj_20> was submitted from host <discovery2> by user <zabatta.ma> in cluster <mghpcc_cluster1>.
+Job was executed on host(s) <4*compute-0-040>, in queue <ser-par-10g>, as user <zabatta.ma> in cluster <mghpcc_cluster1>.
+                            <4*compute-0-041>
+                            <4*compute-0-037>
+                            <4*compute-0-036>
+                            <4*compute-0-046>
+</home/zabatta.ma> was used as the home directory.
+</home/zabatta.ma/Project/MPI> was used as the working directory.
+Started at Tue Mar 29 18:34:42 2016
+Results reported at Tue Mar 29 18:34:56 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+#BSUB -J mpi_proj_20
+#BSUB -o mpi_proj_out_20
+#BSUB -e mpi_proj_err_20
+#BSUB -n 20
+#BSUB -R "span[ptile=4]"
+
+mpirun -np 20 mympi
+mpirun -np 20 mympi
+mpirun -np 20 mympi
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               266.25 sec.
+    Max Memory :             14 MB
+    Average Memory :         14.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               57 MB
+
+    Max Processes :          1
+    Max Threads :            1
+
+The output (if any) follows:
+
+Execution time = 4.738273 
+Execution time = 3.815161 
+Execution time = 3.803256 
+
+
+PS:
+
+Read file <mpi_proj_err_20> for stderr output of this job.
+
