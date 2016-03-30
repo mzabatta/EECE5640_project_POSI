@@ -1,1 +1,21 @@
+Project for High Performance Computing class
 
+Instructions:
+
+1. open an interactive node on the discovery cluster.
+2. compile the code with the command "mpiCC -o mympi main_MPI.cpp"
+3. run the code with the command "bsub < mpi-XX.bash" (replacing XX with 4, 10, or 20 to specify nodes)
+
+File Descriptions:
+
+main_mpi.cpp - main C++ code with MPI parallelization implemented
+mympi - executable 
+mpi-10.bash - script for running on the discovery cluster with 10 nodes 
+mpi-20.bash - script for running on the discovery cluster with 20 nodes 
+mpi-4.bash - script for running on the discovery cluster with 4 nodes
+F.txt - input file of atom form factors 
+q.txt - input file of q angle values 
+X.txt - input file of atom coordinates 
+mpi_proj_out_10 - output file from 10 node bash output
+mpi_proj_out_20 - output file from 20 node bash output
+mpi_proj_out_4 - output file from 4 node bash output
